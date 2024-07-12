@@ -8,6 +8,65 @@
 
 /* generic */
 
+body {
+    font-family: sans-serif;
+}
+.conteinr {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: lightgrey;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}   
 
 
 /* utilitis */
+.conteinr {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.box {
+    border: 1px dashed black;
+}
+
+
+
+
+
+/* header */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border: 1px dashed black;
+}
+
+.spotlight {
+    background-color: #b4d0e7;
+    height: ;
+}
+
+.nav-left {
+    display: flex;
+    width: 50%;
+    border: 1px dashed black;
+}
+
+.nav-right {
+    width: 50%
+    border: 1px dashed black;
+}
