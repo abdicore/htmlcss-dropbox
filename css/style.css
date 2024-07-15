@@ -20,7 +20,7 @@ body {
 }
 
 .conteiner-smoll {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
 
 }
@@ -34,6 +34,12 @@ ul {
 a {
     text-decoration: none;
     color: #b3b3b3;
+}
+
+p {
+    font-size: 13px;
+    color: #9a9a9a;
+    margin: 15px 0 30px 0;
 }
 
 h1 {
@@ -79,13 +85,16 @@ h6 {
     margin-top: 30px;
 }
 
-.ml-50 {
-    margin-left: 50px;
-    
+.ml-5 {
+    margin-left: 5px;
 }
 
-.pad-10-40 {
-    padding: 10px 40px;
+.ml-50 {
+    margin-left: 50px;
+}
+
+.pad-10-20 {
+    padding: 10px 20px;
     line-height: 24px;
 }
 
@@ -127,7 +136,10 @@ img {
 }
 
 
-.nav-left ul li, .nav-right ul li {
+.nav-left ul li {
+    margin: 0 10px;
+}
+.nav-right ul li {
     margin: 0 10px;
 }
 
@@ -152,8 +164,8 @@ img {
 }
 
 .btn-secondary {
-    border: apx solid #9a9a9a;
-    color: white;
+    border: 1px solid #9a9a9a;
+    color: #9a9a9a;
     padding: 5px 10px;
     display: inline-block;
 
@@ -267,3 +279,20 @@ img {
 
 
 
+/* ads */
+
+#ads {
+    margin-top: 50px;
+}
+
+.col-lt {
+    flex-basis: 60%;
+    min-height: 100px;
+
+}
+
+.col-rt {
+    flex-basis: 40%;
+    min-height: 100px;
+    padding: 50px 30px;
+}
