@@ -1,102 +1,188 @@
-/* reset */
+/* css reset */
 * {
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     box-sizing: border-box;
-}
 
+}
 
 /* generic */
-
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
-.conteinr {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-header {
-    background-color: lightgrey;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}   
 
 
 /* utilitis */
+
 .conteiner {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
+.conteiner-smoll {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 900;
+    padding: 50px 0 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.relative {
+    position: relative;
+    top: 30px;
+}
 
 .flex {
     display: flex;
+    align-items: center;
 }
-
-.box {
-    border: 1px dashed black;
-}
-
-
-h1 {
-    font-size: 32px;
-}
-
-
-
-
 
 /* header */
-.navbar {
+#main-header {
+    height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 80px;
-    border: 1px dashed black;
+    padding: 10px 20px;
+    background-color: #fff;
 }
 
-.spotlight {
-    display: flex;
-    margin-top: 80px;
-    align-items: center;
-    height: calc(100vh - 80px);
+
+.nav-left ul li, .nav-right ul li {
+    margin: 0 10px;
+}
+
+
+
+.btn-xs {
+    background-color: #0061ff;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #0061ff;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+
+}
+
+.btn-secondary {
+    border: apx solid #9a9a9a;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+
+}
+
+
+
+
+/* jumbotron */
+#jumbotron {
+    height: 550px;
     background-color: #b4d0e7;
 }
 
-.nav-left {
+.row {
     display: flex;
-    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.nav-right {
-    width: 50%
-    border: 1px dashed black;
+.col-30 {
+    flex-basis: 30%;
+    border: 1px;
 }
 
-.box-centrale {
-    width: 100%;
-    height: 500px;
+.col-70 {
+    flex-basis: 70%;
+    border: 1px;
 }
 
-.title-spot {
-    width: 100%;
-    height: 150px;
+
+
+
+/* section busines */
+
+#busines {
+    margin-top: 150px;
 }
 
-.text-content {
-    width: 40%;
-    min-height: 300px;
-
+.circle {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #0061ff;
+    border-radius: 50%;
+    margin-right: 5px;
 }
 
-.img-content {
-    background-size: contain;
-    width: 60%;
-    min-height: 300px;
-    background-image: url(../img/jumbo.png);
 
+.row {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: calc(100% / 3 - 30px /3);
+    border: 1px solid;
+    margin-bottom: 15px;
+
+    min-height: 200px;
+}
+
+.col-big {
+    flex-basis: 100%;
+    border: 1px solid #eaeaec;
+
+    min-height: 200px;
 }
