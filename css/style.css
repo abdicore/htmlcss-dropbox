@@ -20,7 +20,7 @@ body {
 }
 
 .conteiner-smoll {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 
 }
@@ -50,6 +50,7 @@ h2 {
 h4 {
     font-size: 24px;
     font-weight: 700;
+    margin-top: 20px;
 }
 
 h5 {
@@ -59,6 +60,7 @@ h5 {
 
 h6 {
     font-size: 12px;
+
 }
 
 
@@ -79,6 +81,7 @@ h6 {
 
 .ml-50 {
     margin-left: 50px;
+    
 }
 
 .pad-10-40 {
@@ -169,6 +172,8 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: space-between;
 }
 
 .col-30 {
@@ -199,18 +204,24 @@ img {
 }
 
 
-.row {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-}
 
-.col {
+
+.col-left {
     flex-basis: calc(100% / 3 - 30px /3);
     border: 1px solid #8b8b8b;
     margin-bottom: 15px;
+}
 
-    min-height: 200px;
+.col-central {
+    flex-basis: calc(100% / 3 - 30px /3);
+    border: 1px solid #8b8b8b;
+    margin-bottom: 15px;
+}
+
+.col-right {
+    flex-basis: calc(100% / 3 - 30px /3);
+    border: 1px solid #8b8b8b;
+    margin-bottom: 15px;
 }
 
 .col-big {
@@ -226,9 +237,33 @@ img {
     padding: 10px 0;
 }
 
-.icon-list {
+.border-bottom-xs {
+    width: 40px;
+    border-bottom: 1px solid #8b8b8b;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.icon-list{
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.icon-list li {
     display: flex;
     gap: 10px;
-    margin: 30px 0;
-    align-items: center;
+    margin: 5px 0;
+    align-items: baseline;
 }
+
+.font-size {
+    font-size: 12px;
+}
+
+.text-decoretion {
+    text-decoration: underline;
+    color: #0061ff;
+}
+
+
+
