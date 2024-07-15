@@ -296,3 +296,36 @@ img {
     min-height: 100px;
     padding: 50px 30px;
 }
+
+
+/* card */
+#card {
+    margin-top: 50px;
+}
+
+.card-up-lt  {
+    flex-basis: calc(100% / 3 - 30px /3);
+}
+
+.card-up-x  {
+    flex-basis: calc(100% / 3 - 30px /3);
+}
+
+.card-up-rt  {
+    flex-basis: calc(100% / 3 - 30px /3);
+}
+
+.card-dw-lt  {
+    flex-basis: calc(100% / 3 - 30px /3);
+    margin-top: 15px;
+}
+
+.card-dw-x  {
+    flex-basis: calc(100% / 3 - 30px /3);
+    margin-top: 15px;
+}
+
+.card-dw-rt  {
+    flex-basis: calc(100% / 3 - 30px /3);
+    margin-top: 15px;
+}
